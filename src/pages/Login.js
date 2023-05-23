@@ -14,6 +14,7 @@ import Typography from '@mui/material/Typography';
 import Container from '@mui/material/Container';
 import './login.css'
 import HelpIcon from '@mui/icons-material/Help';
+import IframeResizer from 'iframe-resizer-react';
 
 export default function Login() {
     const {
@@ -145,6 +146,13 @@ export default function Login() {
 
                 </Box>
             </Container>
+
+            {/* <IframeResizer
+  src="https://ocp.moodlecloud.com/login/index.php"
+  heightCalculationMethod="taggedElement"
+  contentHeight="yui_3_17_2_1_1683504618858_33"
+/> */}
+
 
 
         </>

@@ -344,7 +344,7 @@ export default function Adminpanel() {
           <Grid
             container
             sx={{ width: 1, bottom: "30px" }}
-            justifyContent="center"
+           
             spacing={1}
           >
             {/*l3ayba */}
@@ -421,7 +421,7 @@ export default function Adminpanel() {
         <Box sx={style}>
           <Container>
             <AddExam />
-            <Button style={{color:"white"}}onClick={handleClose}>Done</Button>
+            <Button style={{color:"white"}} onClick={handleClose}>Done</Button>
           </Container>
         </Box>
       </Modal>

@@ -59,20 +59,22 @@ export default function ExamContent() {
   console.log({ state });
 
   return (
-    <div style={{ backgroundColor: "#EFEEEF", height: "100%" , margin: 0,
-    padding: 0 }}>
+    <div >
       <div>
         <Subheader />
       </div>
-      <div>
-        <Idcard />
+      <div style={{ backgroundColor: "#EFEEEF",
+    padding:  '1% 0'}}>
+      <div style={{marginTop: '-5%'}}>
+      <Idcard />
       </div>
+
       <p className={styles.title}>
         {state.title}
       </p>
       <div
         style={{ display: "flex", flexDirection: "row", marginLeft: "109px" }}
-      >
+        >
         <div>
           <Dropdownlist />
         </div>
@@ -93,13 +95,12 @@ export default function ExamContent() {
           </div>
         </div>
       </div>
-      <div style={{ backgroundColor: "#EFEEEF", margin: 0,
-    padding: 0 }}>
+      
         <Button onClick={handleOpen} className={styles.addQuestionbutton}>
           <AddBoxIcon />
           <span className=""> &#160; Ajouter une question</span>
         </Button>
-      </div>
+     
 
       {/* modal......................... */}
       <Modal
@@ -107,7 +108,7 @@ export default function ExamContent() {
         onClose={handleClose}
         aria-labelledby="modal-modal-title"
         aria-describedby="modal-modal-description"
-      >
+        >
         <Box className={styles.modal}>
           <Container>
             <Question prop={state} />
@@ -116,6 +117,7 @@ export default function ExamContent() {
       </Modal>
 
       {/* modal.................................. */}
+        </div>
     </div>
     //     <>
     //       <Box style={{ backgroundColor: "#EFEEEF"}}>

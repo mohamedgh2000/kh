@@ -30,7 +30,7 @@ console.log(location);
   return (
     <>
 {/* if auth */}
-{location.pathname !== '/' && <Navbar />}
+{(location.pathname !== '/' ) && <Navbar />}
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/HowToUse' element={<HowToUse />} />

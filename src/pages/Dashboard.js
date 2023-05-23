@@ -91,23 +91,29 @@ export default function Dashboard() {
               spacing={2}
             >
               <MainBarGraph />
-              <Box>
-                <ZoneActive
-                  style={{ position: "relative", top: "20px" }}
+              
+            </Stack>
+          </Grid>
+          <Grid sx={{ position: "relative", top: "20px", left: "50px" }}>
+            <TablePerson />
+          </Grid>
+         
+          
+                
+              
+        </Grid>
+<div style={{marginLeft:"95px",borderRadius:"10px"}}>
+
+        <ZoneActive
+ 
                   data={{
                     id: 1,
                     name: "mohamed",
                     address: "mabrouka",
                     phone: "0634601449",
                   }}
-                />
-              </Box>
-            </Stack>
-          </Grid>
-          <Grid sx={{ position: "relative", top: "20px", left: "50px" }}>
-            <TablePerson />
-          </Grid>
-        </Grid>
+                />  
+</div>
       </Box>
     </>
   );

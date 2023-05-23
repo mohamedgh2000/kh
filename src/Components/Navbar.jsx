@@ -4,16 +4,38 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline'
 import { NavLink, Link, Route, Routes } from "react-router-dom";
 import BookList from '../pages/HowToUse'
 import logo from './Group 2.svg'
-const navigation = [
-  // { name: 'Home', to: '/' },
-  // { name: 'How to use', to: 'HowToUse' },
-  { name: 'Dashboard', to: 'Dashboard' },
-  { name: 'Exams', to: 'Adminpanel' },
-]
+import { useLocation } from 'react-router-dom';
+
+
+
+
+
 
 
 
 function Navbar() {
+  
+  const location = useLocation();
+  let navigation = [
+    { name: 'Dashboard', to: 'Dashboard' },
+    { name: 'Exams', to: 'Adminpanel' },
+  ]
+  
+  if (location.pathname == '/User'){
+    console.log("hada");
+    navigation = [
+      { name: 'User', to: 'User' },
+    ]
+  }
+  else{
+    navigation = [
+  
+      { name: 'Dashboard', to: 'Dashboard' },
+      { name: 'Exams', to: 'Adminpanel' },
+    ]
+  }
+  console.log(navigation);
+  console.log(location.pathname);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <>
