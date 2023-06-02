@@ -13,6 +13,7 @@ import Adminpanel from './pages/Adminpanel'
 import Userpanel from './pages/users/Userpanel'
 import Dashboard from './pages/Dashboard'
 import ExamContent from '../src/Components/Exam/ExamContent'
+import UserexamContent from './pages/users/Userexamcontent'
 import { useLocation } from 'react-router-dom';
 
 
@@ -37,6 +38,7 @@ console.log(location);
         <Route path='/Admin' element={<Admin />} />
         <Route path='/Adminpanel' element={<Adminpanel />} />
         <Route path='/ExamContent' element={<ExamContent />} />
+        <Route path='/UserexamContent' element={<UserexamContent />} />
         <Route path='/Dashboard' element={<Dashboard />} />
         <Route path='/User' element={<Userpanel/>} />
       </Routes>

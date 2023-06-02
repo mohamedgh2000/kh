@@ -28,7 +28,7 @@ import Timer from "./Timer";
 // import ScoreExam from "./ScoreExam";
 import "./form.css";
 import { Subheader } from "../../Components/UI/Subheader";
-import Idcard from "../UI/Idcard";
+import Idcard from "../../Components/UI/Idcard";
 import Dropdownlist from "../../Components/UI/Dropdownlist";
 import Catgeorycard from "../../Components/UI/Catgeorycard";
 import Questionslist from "../../Components/UI/Questionslist";
@@ -91,9 +91,9 @@ export default function ExamContent() {
           <Questionslist state={state} />
         </div>
         <div className={styles.attributesSection}>
-          <div>
+          {/* <div>
             <Timer prop={state} />
-          </div>
+          </div> */}
           {/* <div>
             <ScoreExam prop={state} />
           </div> */}

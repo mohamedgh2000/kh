@@ -306,7 +306,7 @@ export default function Adminpanel() {
                       textDecoration: "none",
                       paddingRight: "0px",
                     }}
-                    to="/ExamContent"
+                    to="/Userexamcontent"
                     state={item}
                   >
                     <Cardexam props={item} />
